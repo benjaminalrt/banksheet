@@ -5,7 +5,7 @@ import { Provider } from "react-redux";
 import { PersistGate } from "redux-persist/integration/react";
 
 import { store, persistor } from "./store";
-import App from "./components/App";
+import BankSheet from "./components/BankSheet";
 
 import "./styles.css";
 
@@ -15,7 +15,7 @@ ReactDOM.render(
   // puis dans la PersistGate, qui va récupérer les données au premier chargement de l'application
   <Provider store={store}>
     <PersistGate persistor={persistor}>
-      <App />
+      <BankSheet />
     </PersistGate>
   </Provider>,
   rootElement

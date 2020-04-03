@@ -4,7 +4,7 @@ const initialState = {
   list: ["The Very First One", "Martin Matin"]
 };
 
-const UserReducer = function(previousState = initialState, action) {
+const RowReducer = function(previousState = initialState, action) {
   const newState = R.clone(previousState);
   switch (action.type) {
     case "ADD_USER":
@@ -20,4 +20,4 @@ const UserReducer = function(previousState = initialState, action) {
   }
 };
 
-export default UserReducer;
+export default RowReducer;

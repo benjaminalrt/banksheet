@@ -1,16 +1,16 @@
 import React from "react";
 import { connect } from "react-redux";
 
-import User from "./User";
+import Row from "./Row";
 
-const UserList = props => {
+const RowList = props => {
   return (
     <div>
       <span className="text">
         Nombre d'utilisateurs : {props.userList.length}
       </span>
-      {props.userList.map(user => {
-        return <User key={user} username={user} />;
+      {props.userList.map((user,id) => {
+        return <Row key={id} username={user} />;
       })}
     </div>
   );
@@ -20,7 +20,7 @@ const UserList = props => {
 const mapStateToProps = reduxState => {
   return {
     // on accédera à ces donnnées dans le composant via : props.userList
-    userList: reduxState.userReducer.list
+    userList: reduxState.rowReducer.list
   };
 };
 
@@ -28,4 +28,4 @@ const mapStateToProps = reduxState => {
 export default connect(
   mapStateToProps,
   null
-)(UserList);
+)(RowList);

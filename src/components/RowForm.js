@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { connect } from "react-redux";
 
-const UserForm = props => {
+const RowForm = props => {
   const [userInput, setUserInput] = useState("");
   return (
     <div className="container">
@@ -41,4 +41,4 @@ const mapDispatchToProps = dispatch => {
 export default connect(
   null,
   mapDispatchToProps
-)(UserForm);
+)(RowForm);

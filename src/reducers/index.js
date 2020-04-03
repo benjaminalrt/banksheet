@@ -1,5 +1,5 @@
-import UserReducer from "./UserReducer";
+import RowReducer from "./RowReducer";
 
 export default {
-  userReducer: UserReducer
+  rowReducer: RowReducer
 };

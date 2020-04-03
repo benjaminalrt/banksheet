@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 
-const User = props => {
+const Row = props => {
   return (
     <div className="user">
       <div className="alert alert-primary" role="alert">
@@ -32,4 +32,4 @@ const mapDispatchToProps = dispatch => {
 export default connect(
   null,
   mapDispatchToProps
-)(User);
+)(Row);
